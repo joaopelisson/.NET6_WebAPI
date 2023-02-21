@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
+var configuration = app.Configuration;
+ProductRepository.Init(configuration);
 
 app.MapGet("/", () => "My first API in .NET6!");
 
@@ -33,16 +35,25 @@ app.MapDelete("/products/{code}", ([FromRoute] string code) => {
     return Results.Ok();
 });
 
+//Applying rule for this code to run only in configured environment i.e. Stagings
+if(app.Environment.IsStaging()){
+    app.MapGet("/configuration/database", (IConfiguration configuration) => {
+        return Results.Ok($"{configuration["database:connection"]}/{configuration["database:port"]}");
+    });
+}
+
 app.Run();
 
 //simulating a database
 public static class ProductRepository {
-    public static List<Product> Products { get; set; }
+    public static List<Product> Products { get; set; } = Products = new List<Product>();
+
+    public static void Init(IConfiguration configuration){
+        var products = configuration.GetSection("Products").Get<List<Product>>();
+        Products = products;
+    }
 
     public static void add(Product product) {
-        if(Products == null){
-            Products = new List<Product>();
-        }
         Products.Add(product);
     }
     public static Product GetBy(string code){
