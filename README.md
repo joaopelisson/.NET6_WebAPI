@@ -11,3 +11,4 @@ It currently does not represent the final model of the project/repository, as it
 - Section 4: First API
 - Section 5: Basic CRUD
 - Section 6 - API Best Practices
+- Section 7 - Configuration data (different environments)
