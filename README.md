@@ -10,3 +10,4 @@ It currently does not represent the final model of the project/repository, as it
 - Section 3: The Concept of a Web Application
 - Section 4: First API
 - Section 5: Basic CRUD
+- Section 6 - API Best Practices
