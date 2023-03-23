@@ -81,6 +81,6 @@ public class ApplicationDbContext: DbContext{
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlServer(
-            "Sever=localhost;Database=Products;User Id=sa;Password=###@;MultipleActiveResultSets=true;Encrypt=YES;TrustServerCertificate=YES"
+            "Server=localhost;Database=Products;User Id=sa;Password=###@;MultipleActiveResultSets=true;Encrypt=YES;TrustServerCertificate=YES"
         );
 }
