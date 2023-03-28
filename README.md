@@ -13,4 +13,5 @@ It currently does not represent the final model of the project/repository, as it
 - Section 6 - API Best Practices
 - Section 7 - Configuration data (different environments)
 - Section 8 - Installing SQL Server as a container with docker
-- Section 9 - Entity Framework Core (in dev...)
+- Section 9 - Entity Framework Core
+- Section 10 - Saving entities in the database (in dev...)
