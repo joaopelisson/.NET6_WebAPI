@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230331123517_RenameCategoryToCategoriesFix")]
-    partial class RenameCategoryToCategoriesFix
+    [Migration("20230331174129_RenameCategoryToCategories")]
+    partial class RenameCategoryToCategories
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
