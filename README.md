@@ -15,4 +15,6 @@ It currently does not represent the final model of the project/repository, as it
 - Section 8 - Installing SQL Server as a container with docker
 - Section 9 - Entity Framework Core
 - Section 10 - Saving entities in the database
-- Section 11 - Next steps of the course (in dev...)
+- Section 11 - Next steps of the course 
+
+⚠ Attention, the continuation of this project /course continues in another repository, because we are going to build a new application! [Click here to view](https://github.com/joaopelisson/.NET6_IWantApp) 💚
