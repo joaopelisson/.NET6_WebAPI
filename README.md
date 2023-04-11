@@ -2,7 +2,6 @@
 
 _This project has the objective of studies, bringing development in .NET 6, during the course [".NET 6 WEB API - From zero to advanced"](https://www.udemy.com/course/net-6-web-api-do-zero-ao-avancado/) 🔥_
 
-It currently does not represent the final model of the project/repository, as it is under development!
 
 ℹ️ Where so far the following modules have been completed:
 - Section 1: Introduction
